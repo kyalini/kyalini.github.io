@@ -1,0 +1,34 @@
+#narrowScreen{
+    color: purple
+}
+@media (min-width: 600px){
+    #narrowScreen{
+        color: Green
+    }
+}
+#wideScreen{
+    color:lightblue
+}
+@media (max-width: 800px){
+    #wideScreen{
+        color: red
+    }
+}
+#shortScreen{
+    color: yellow
+}
+@media (min-height: 500px){
+    #shortScreen{
+        color: turquoise
+    }
+}
+#tallScreen{
+    color: orange
+}
+
+@media (max-height: 700px){
+    #tallScreen{
+        color: lavender
+    }
+}
+/* I changed the max-height so that it can show on the page */
