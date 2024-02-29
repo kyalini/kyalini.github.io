@@ -37,13 +37,10 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    display:flex
+    display:flex;
+    justify-content: space-around;
   }
 
-  nav li{
-    flex:1
-  }
-  
   nav a {
     color: #fff;
     text-decoration: none;
