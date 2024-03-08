@@ -42,7 +42,6 @@ img{
     animation-duration: 3s;
     animation-name: ballmove;
     top: 30em;
-    animation-iteration-count: infinite;
 }
 
 @keyframes ballmove{
