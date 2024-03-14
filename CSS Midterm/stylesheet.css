@@ -1,0 +1,52 @@
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2;
+  }
+div {
+    padding:1em
+}
+nav {
+    background-color: #5e7ca7;
+    padding: .5em;
+    position: sticky;
+    top: -1px;
+    display:flex;
+    justify-content: space-around;
+  }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+ 
+div{
+    padding-bottom: 3em;
+}
+
+h1 {
+  background-color: rgb(51, 67, 100);
+  color:white;
+  padding:1em;
+  margin:0;
+}
+
+.intro {
+  background-image: linear-gradient(to top, white,#5e7ca7);
+}
+
+.feature{
+  float: left;
+  padding-right: 1em;
+  height:200px;
+  width:200px;
+  margin:0em;
+  padding-bottom: 1em;
+  margin:0
+}
+.fourSeasons{
+  border-top: dotted 10px;
+  margin:0;
+  
+}
