@@ -4,6 +4,15 @@ body {
     margin: 0;
     font: 1.2em / 1.2;
   }
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(11, 41, 89,0.65),rgba(9,0,77,0.65)), url(CSS-Midterm/ensemble.png);
+    background-size:cover;
+    background-position:center;
+    padding: 10px 8%
+}
 div {
     padding:1em
 }
@@ -36,17 +45,20 @@ h1 {
   background-image: linear-gradient(to top, white,#5e7ca7);
 }
 
-.feature{
-  float: left;
-  padding-right: 1em;
-  height:200px;
-  width:200px;
-  margin:0em;
-  padding-bottom: 1em;
-  margin:0
-}
 .fourSeasons{
-  border-top: dotted 10px;
-  margin:0;
-  
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1000px;
+    column-count:2;
+    display:flex;
+    gap:3px; 
+}
+
+.beethoven{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1000px;
+    column-count:2;
+    display:flex;
+    gap:3px;
 }
