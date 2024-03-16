@@ -1,0 +1,105 @@
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2;
+  }
+.container{
+    min-height: 30vh;
+    background-image:linear-gradient(rgba(11, 41, 89,0.65),rgba(9,0,77,0.65)),url(/kyalini.github.io/CSS-Midterm/ensemble.png);
+    background-size:cover;
+    background-position:center;
+    padding:1em
+}
+
+.part{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    column-count:2;
+    display:flex;
+    gap:1px
+}
+
+div {
+    padding:1em;
+    padding-bottom: 3em;
+  }
+.navigation {
+    padding: .5em;
+    position: sticky;
+    top: -1px;
+    display:flex;
+    justify-content: space-around;
+    background-color:rgba(9,0,77);
+  }
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+.musicList{
+  margin:0;
+  background-color:rgba(9,0,77);
+  max-width:1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.musicList a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:block;
+    padding: 10px;
+    margin:0;
+    color:white;
+    border-top: 1px solid white
+}
+
+ul{
+  padding-top: 15px;
+  font-size: 11px;
+}
+.intro{
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1000px;
+}
+
+h1 {
+  color:white;
+  padding:1em;
+  margin:0;
+}
+
+.fourSeasons,.beethoven,.tchai,.ravel,.no8,.emperor,.bartok,.brahms,.violin{
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 40px;
+    max-width: 1000px;
+    display:grid;
+    grid-template-columns: 3fr 1.5fr;
+    column-gap: 100px;
+}
+
+
+@media screen and (max-width:600px){
+  .fourSeasons,.beethoven,.tchai,.ravel,.no8,.emperor,.bartok,.brahms,.violin{
+    margin: 0 auto;
+    padding-top:40px;
+    padding: 0 20px;
+    max-width: 1000px;
+    grid-template-columns: 100%;
+  }
+
+  ul{
+    font-size: 15px;
+  }
+
+  .navigation{
+      flex-direction:column;
+      gap:20px;
+      text-align:center;
+      position:static
+  }
+}
