@@ -1,0 +1,228 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #6797d5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh
+  }
+  .text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .app {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    padding-top: 20px;
+  }
+  
+  header {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+    color: black;
+    background-color: white;
+  }
+  
+  .container{
+    position: absolute;
+    top:20px;
+    max-width:1200px;
+    width:95%;
+  }
+
+  .slider-wrapper{
+    position:relative;
+  }
+
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+  }
+  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+  .quotes {
+    background:linear-gradient(to top,rgba(11, 41, 89,0.65),rgba(9,0,77,0.65));
+    padding: 20px 50px;
+    min-height: 200px;
+  }
+  
+  .quote-text {
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .controls {
+    background-color: white;
+    width: 100%;
+    padding: 20px 50px;
+  }
+  
+  .button {
+    display: block;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  
+  .twitter {
+    background-color: rgba(9,0,77);;
+    text-decoration: none;
+  }
+  
+  .twitter:hover {
+    background-color: #6797d5;
+  }
+  
+  .new-quote {
+    background-color:rgba(9,0,77) ;
+    margin-bottom: 15px;
+  }
+  
+  .new-quote:hover {
+    background-color: #6797d5;
+  }
+  
+  .new-quote:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .app {
+      width: 100%;
+      position: absolute;
+      top: 90%;
+    }
+    .quote-text {
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+  
+  
