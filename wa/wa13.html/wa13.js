@@ -90,7 +90,7 @@ let total = 0
 for(const employee of enployees){
     total += employee['salary']
 }
-console.log(total);
+console.log('problem 4',total);
 
 //problem 5
 
