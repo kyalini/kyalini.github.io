@@ -19,7 +19,7 @@ const employees = [
         "salary":21200,
         "raiseEligible":false},
 ]
-console.log(employees);
+console.log('problem 1',employees);
 
 //Q2
 
@@ -47,7 +47,7 @@ const company =
          ]
     }
 
-console.log(company);
+console.log('problem 2',company);
 
 //Q3
 
@@ -82,7 +82,7 @@ const newEmployee =
         "raiseEligible":false}
 
 companyUpdate.employees.push(newEmployee);
-console.log(companyUpdate);
+console.log('problem 3',companyUpdate);
 
 //Q4
 
@@ -137,7 +137,7 @@ function updateSalaryRaise(company) {
     }
 }
 updateSalaryRaise(companyRaise);
-console.log(companyRaise.employees);
+console.log('problem 5',companyRaise.employees);
 
 //Q6
 
@@ -182,4 +182,4 @@ for (let k = 0; k < companyHome.employees.length; k++) {
         companyHome.employees[k].wfh = false;
     }
 }
-console.log(companyHome.employees)
+console.log('problem 6',companyHome.employees)
