@@ -1,4 +1,4 @@
-//Q1
+//problem 1
 
 const employees = [
         {"name":"Sam",
@@ -21,7 +21,7 @@ const employees = [
 ]
 console.log('problem 1',employees);
 
-//Q2
+//problem 2
 
 const company = 
     {"companyName":"Tech Stars",
@@ -49,7 +49,7 @@ const company =
 
 console.log('problem 2',company);
 
-//Q3
+//problem 3
 
 const companyUpdate = 
     {"companyName":"Tech Stars",
@@ -84,7 +84,7 @@ const newEmployee =
 companyUpdate.employees.push(newEmployee);
 console.log('problem 3',companyUpdate);
 
-//Q4
+//problem 4
 
 let total = 0
 for(let i = 0; i <company.employees.length; i++){
@@ -92,7 +92,7 @@ for(let i = 0; i <company.employees.length; i++){
 }
 console.log(total);
 
-//Q5
+//problem 5
 
 const companyRaise = {"companyName" : "Tech Stars",
 "website" : "www.techstars.site",
@@ -139,7 +139,7 @@ function updateSalaryRaise(company) {
 updateSalaryRaise(companyRaise);
 console.log('problem 5',companyRaise.employees);
 
-//Q6
+//problem 6
 
 const companyHome = {
     "companyName": "Tech Stars",
