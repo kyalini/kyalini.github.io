@@ -87,8 +87,8 @@ console.log('problem 3',companyUpdate);
 //problem 4
 
 let total = 0
-for(let i = 0; i <company.employees.length; i++){
-    total += company.employees[i].salary
+for(const employee of enployees){
+    total += employee['salary']
 }
 console.log(total);
 
