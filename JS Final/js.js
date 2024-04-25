@@ -23,7 +23,7 @@ window.onload = function() {
           score = 0
         } else {
           buttons.setAttribute('id','button1');
-          buttons.textContent = 'Volume';
+          buttons.textContent = 'Set Volume';
           document.getElementById("score").innerText = "Volume: "+ score.toString()+"%";
           gameOver = false;
         }
