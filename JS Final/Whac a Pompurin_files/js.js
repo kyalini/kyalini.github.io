@@ -11,6 +11,7 @@ window.onload = function() {
     if(buttons){
     buttons.addEventListener('click', changeItem);
     function changeItem(){
+        document.getElementById("score").innerText = "Set Volume: " + score.toString()+"%"; //update score html
         gameOver = true;
         }
     }
@@ -19,12 +20,10 @@ window.onload = function() {
         if (btnClass === 'button1') {
           buttons.setAttribute('id','restart');
           buttons.textContent = 'Restart';
-          document.getElementById("score").innerText = "Set Volume: "+ score.toString()+"%";
           score = 0
         } else {
           buttons.setAttribute('id','button1');
           buttons.textContent = 'Volume';
-          document.getElementById("score").innerText = "Volume: "+ score.toString()+"%";
           gameOver = false;
         }
       });
@@ -90,13 +89,13 @@ function selectTile() {
         }
         if (this == currPomTile) {
             score += 1;
-            document.getElementById("score").innerText = "Volume: "+score.toString()+"%"; 
+            document.getElementById("score").innerText = score.toString()+"%"; 
         }
         if (score <= 0){
             score = 1
         }
     else if (this == currPlantTile) {
             score -= 1;
-            document.getElementById("score").innerText = "Volume: "+score.toString()+"%";
+            document.getElementById("score").innerText = score.toString()+"%";
         }
     }
