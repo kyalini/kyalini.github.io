@@ -2,12 +2,23 @@ body {
     font-family:'Courier New', Courier, monospace;
     text-align: center;
     background: url("./background.png");
-    background-size: cover;
+    background-size:cover 320px;
+    background-image: non-repeat;
+    margin-top:5px;
+}
+button{
+    margin-bottom:10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:rgb(249, 210, 93);
+    border-color:rgb(249, 210, 93);
 }
 
 #board {
-    width: 540px;
-    height: 540px;
+    width: 480px;
+    height: 480px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -18,8 +29,8 @@ body {
 }
 
 #board div {
-    width: 180px; 
-    height: 180px;
+    width: 120px; 
+    height: 120px;
     background-image: url("./flowerPot.png");
     background-size: cover;
 }
